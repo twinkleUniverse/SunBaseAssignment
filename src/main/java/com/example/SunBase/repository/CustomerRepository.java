@@ -9,13 +9,13 @@ import java.util.Optional;
 
 @Repository
 public interface CustomerRepository extends JpaRepository<Customer,Integer> {
-    Optional<Customer> findByFirstName(String name);
-   Optional<Customer> findByPhoneNo(String phone);
-   Optional<Customer> findByEmail(String email);
+    /*Optional<Customer> findByFirstName(String name);*/
+   Customer findByPhoneNo(String phone);
+   Customer findByEmail(String email);
 
-   List<Customer> findAllByFirstName(String name);
-    List<Customer> findAllByLastName(String name);
-    List<Customer> findAllByCity(String name);
+   List<Customer> findAllByFirstName(String firstName);
+    List<Customer> findAllByLastName(String lastName);
+    List<Customer> findAllByCity(String city);
     List<Customer> findAllByState(String state);
 
 
