@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+   flex-direction: column;
+    background: linear-gradient(to right, #3e4497, #ff0000); /* Initial gradient */
+    transition: background-color 1s;
+    
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    color: white;
+    background-color: #000000;
+}
+.action-buttons button {
+    margin-right: 5px;
+}
+
+.btndiv{
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+}
+
+
+.search_field{
+    border-radius: 5px;
+    height: 19px;
+}

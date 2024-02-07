@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    /*justify-content: center;*/
+    margin-top: 200px;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    background: linear-gradient(to top, #3979aa, #ae76bc); /* Initial gradient */    
+    
+}
+body > h2 {
+    margin-top: 200px;
+    margin-bottom: 20px;
+    /* Adjust other styles as needed */
+}
+
+
+#customerForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#customerForm input,
+#customerForm input[type="password"] {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+#customerForm button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 0px;
+    border: 2px solid rgb(80, 73, 73);
+    border-radius: 3px;
+
+    background-color:#181e4c;
+    color: white;
+    cursor: pointer;
+}

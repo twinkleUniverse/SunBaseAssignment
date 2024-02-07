@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer List</title>
+    <link rel="stylesheet" href="customerList.css">
+</head>
+
+<body>
+    <h2 id="heading_text">Customer List</h2>
+    <div id="btndiv">
+        <button onclick="addCustomer()">Add Customer</button>
+    
+        <button onclick="getData()">Get all</button>
+        <select id="search_by" name="search_by">
+            <option value="" style="display: none;">Seach By</option>
+            <option value="firstName">First Name</option>
+            <option value="lastName">Last Name</option>
+            <option value="city">City</option>
+            <option value="email">Email</option>
+            <option value="state">State</option>
+            <option value="PhoneNo">Phone Number</option>
+        </select>
+        <div>
+            <input type="text" class="search_field" placeholder="Enter">
+            <button onclick="search()">Search</button>
+
+        </div>
+        <button onclick="callApi()">Sync</button>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="customerData">
+
+        </tbody>
+    </table>
+
+</body>
+<script src="customerList.js"></script>
+
+</html>
